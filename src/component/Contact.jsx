@@ -19,7 +19,7 @@ const Contact = () => {
          <a href="https://www.linkedin.com/in/sneha-jaiswal-3b8a74230/" target="_blank" className="items">
             <CiLinkedin className="icons" />
           </a>
-        <a href="https://www.google.com" target="_blank" className="items">
+        <a href="https://www.codechef.com/users/sneha090j" target="_blank" className="items">
             <SiCodechef 
             className="icons" />
           </a>
