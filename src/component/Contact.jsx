@@ -1,8 +1,7 @@
 import React from "react";
-import { FaInstagram } from "react-icons/fa";
-import { CiFacebook } from "react-icons/ci";
+import { SiCodechef } from "react-icons/si";
 import { CiLinkedin } from "react-icons/ci";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
 import { FaGithubSquare } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
@@ -16,23 +15,23 @@ const Contact = () => {
           data-aos="zoom-in-up"
           data-aos-duration="1000"
         >
-          <a href="https://www.google.com" target="_blank" className="items">
-            <FaInstagram className="icons" />
-          </a>
-          <a href="https://www.google.com" target="_blank" className="items">
-            <CiFacebook className="icons" />
-          </a>
-          <a href="https://www.google.com" target="_blank" className="items">
+
+         <a href="https://www.linkedin.com/in/sneha-jaiswal-3b8a74230/" target="_blank" className="items">
             <CiLinkedin className="icons" />
           </a>
-          <a href="https://www.google.com" target="_blank" className="items">
-            <FaSquareXTwitter className="icons" />
+        <a href="https://www.google.com" target="_blank" className="items">
+            <SiCodechef 
+            className="icons" />
           </a>
-          <a href="https://www.github.com" target="_blank" className="items">
+          <a href="https://leetcode.com/u/sneha063j/" target="_blank" className="items">
+            <SiLeetcode  className="icons" />
+          </a>
+          
+          <a href="https://github.com/sneha090j" target="_blank" className="items">
             <FaGithubSquare className="icons" />
           </a>
           <a
-            href="mailto:webdevmastery@gmail.com"
+            href="mailto:sneha090j@gmail.com"
             target="_blank"
             className="items"
           >
