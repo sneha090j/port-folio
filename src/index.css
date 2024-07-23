@@ -177,7 +177,18 @@ a {
     width: calc(100% - 40px);
   }
 }
+@media (max-width: 768px) {
+  .projects .text {
+    width: calc(50% - 40px);
+  }
+}
 
+@media (max-width: 480px) {
+  .projects .text {
+    width: calc(100% - 20px);
+    margin: 10px;
+  }
+}
 @media (max-width: 480px) {
   .nav_bar .nav_items {
     font-size: 1rem;
