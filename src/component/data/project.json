@@ -4,7 +4,7 @@
       "title": "JS quotes app",
     
 
-      "imageSrc":"public/assets/project/quote.jpg",
+      "imageSrc":"assets/project/quote.jpg",
       "description": "This is a project made with complete HTML,CSS and javascript and using API. ",
       "demo": "https://quotes-blue.vercel.app/",
       "source": "https://github.com/sneha090j/Quotes"
@@ -12,7 +12,7 @@
     {
       "key": 2,
       "title": "Weather App",
-      "imageSrc": "public/assets/project/weather.jpg",
+      "imageSrc": "assets/project/weather.jpg",
       "description": "This is a project made with complete Nodejs .",
       "demo": "https://www.example.com",
       "source": " https://www.github.com" 
@@ -20,7 +20,7 @@
     {
       "key": 3,
       "title": "Age Calculator",
-      "imageSrc": "public/assets/project/calc.jpg",
+      "imageSrc": "assets/project/calc.jpg",
       "description": "This is a project made with complete React js.",
       "demo": "https://www.example.com",
       "source": "https://github.com/sneha090j/Age-Calculator"
@@ -28,7 +28,7 @@
     {
       "key": 4,
       "title": "E-Learning Websites",
-      "imageSrc": "public/assets/project/learn.jpg",
+      "imageSrc": "assets/project/learn.jpg",
       "description": "This is a project made with complete HTML,CSS,JAVASCRIPT,PHP,and MySQL.",
       "demo": "https://www.example.com",
       "source": "https://github.com/sneha090j/E-Learning-website"
