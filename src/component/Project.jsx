@@ -3,11 +3,7 @@ import project from "./data/project.json";
 
 const Project = () => {
   return (
-    <div
-      className="container my-3"
-      id="projects"
-      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
-    >
+    <div className="container projects my-3" id="projects">
       <h1 style={{ textAlign: "center" }}>PROJECTS</h1>
       <div className="row d-flex justify-content-center">
         {project.map((data) => (
@@ -21,7 +17,7 @@ const Project = () => {
               data-aos="flip-right"
               data-aos-duration="1000"
             >
-              <div className="d-flex justify-content-center p-3">
+              <div className="img d-flex justify-content-center p-3">
                 <img
                   src={data.imageSrc}
                   className="card-img-top"
