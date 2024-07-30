@@ -14,15 +14,15 @@
       "title": "Weather App",
       "imageSrc": "/assets/project/weather.jpg",
       "description": "This is a project made with complete Nodejs .",
-      "demo": "https://www.example.com",
-      "source": " https://www.github.com" 
+      "demo": "https://weather-2ukx.onrender.com/?city=pune",
+      "source": "https://github.com/sneha090j/weather" 
     },
     {
       "key": 3,
       "title": "Age Calculator",
       "imageSrc": "/assets/project/calc.jpg",
       "description": "This is a project made with complete React js.",
-      "demo": "https://www.example.com",
+      "demo": "https://github.com/sneha090j/Age-Calculator",
       "source": "https://github.com/sneha090j/Age-Calculator"
     },
     {
@@ -30,7 +30,7 @@
       "title": "E-Learning Websites",
       "imageSrc": "/assets/project/learn.jpg",
       "description": "This is a project made with complete HTML,CSS,JAVASCRIPT,PHP,and MySQL.",
-      "demo": "https://www.example.com",
+      "demo": "https://github.com/sneha090j/E-Learning-website",
       "source": "https://github.com/sneha090j/E-Learning-website"
     }
   ]
