@@ -23,7 +23,7 @@ const Project = () => {
                   className="card-img-top"
                   alt={data.title}
                   style={{
-                    width: "100%",
+                    width: "70%",
                     height: "auto",
                     maxWidth: "200px",
                     border: "2px solid lightgreen",
