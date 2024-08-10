@@ -7,24 +7,27 @@ body{
   margin:0;
   padding:0;
 
-  background:linear-gradient(to bottom,blue,skyblue,white);
+  background:linear-gradient(to bottom,black,gray);
 }
 /*--------------------------- navbar --------------*/
 .navbar{
   display:flex;
   justify-content:space-between;
-  background:linear-gradient(to bottom left,#1cdcf2,blue,#1cdcf2);
+  background-image: linear-gradient(to bottom,black,gray);
   color:white;
   height:80px;
   padding:20px;
   width:100%;
-
+  position:fixed;
+  right: 0;
+  top: 0;
+  z-index: 900;
 }
 
 .navbar .head{
   width:160px;
   border-radius:10px;
-  border:2px solid #1cdcf2;
+  border:2px solid gray;
   padding-left:20px
 }
 .nvlink{
@@ -39,25 +42,30 @@ font-weight:bold;
 
 }
 .navbar .links:hover{
-  color:#1cdcf2;
- border-bottom:2px solid #1cdcf2;
+
+ border-bottom:2px solid black;
  text-shadow: 2px 2px 5px rgba(999, 888, 999, 0.8);
 }
 
 /* ------------------------------- Home --------------------------*/
 
 .home{
+  position:relative;
+  padding:20px;
+
   width:100%;
+
   display:flex;
   justify-content:space-around;
-  background:linear-gradient(to bottom left,#1cdcf2,blue,#1cdcf2);
+  background-image: linear-gradient(to bottom,black,gray);
   color:white;
 }
 
 .home .img img{
- width:380px;
- height:390px;
- border:2px solid blue;
+  margin-top:90px;
+ width:300px;
+ height:300px;
+ border:2px solid gray;
  border-radius:50%;
 }
 .home .intro h1{
@@ -73,17 +81,17 @@ font-weight:bold;
   margin-top:20px;
   height:40px;
   width:150px;
-  border:3px solid 	#1cdcf2;
+ 
   text-align:center;
-  border:2px solid blue;
-  background-color:	#1cdcf2;
-  color:blue;
+  border:2px solid gray;
+  background-color:	gray;
+ 
   border-radius:10px;
   padding:5px;
 }
 
 .home .intro .resume a{
-  color:navy-blue;
+  color:black;
   text-decoration:none;
   font-weight:bold;
 
@@ -96,10 +104,10 @@ font-weight:bold;
 
 /* -------------------------------- About ---------------------------*/
 
-/* CSS for About component with blue color theme */
 .about {
+  position:relative;
   padding: 40px;
-  background:linear-gradient(to bottom left,#1cdcf2,blue,#1cdcf2); /* Light blue background */
+  background-image: linear-gradient(to bottom,black,gray); /* Light blue background */
   color:white; /* Dark blue text color */
   text-align: center;
 }
@@ -129,8 +137,8 @@ font-weight:bold;
 .about .me p {
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #01579b; /* Dark blue for the paragraph */
-  background-color: #ffffff; /* White background for the text box */
+  color: black; 
+  background-color: #ffffff; 
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -147,7 +155,7 @@ font-weight:bold;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-  border:1px solid #1cdcf2;
+  border:1px solid gray;
   background-color:white;
 }
 
@@ -160,35 +168,36 @@ font-weight:bold;
 
 .about .name a {
   font-size: 1.5rem;
-  color:#01579b; /* Medium blue for the links */
+  color:gray;
   text-decoration: none;
-  flex: 1; /* Allows the link to take up available space */
+  flex: 1; 
   font-weight:bold;
 }
 .about .name a:hover {
   text-decoration: underline;
-  color:#1cdcf2;
+  color:black;
 }
 
 .about .count {
   font-size: 1.2rem;
-  color: #01579b; /* Dark blue for the counts */
+  color: gray;
   font-weight: bold;
-  margin-left: 5px; /* Adds spacing between the link and the count */
-  flex-shrink: 0; /* Prevents the count from shrinking */
+  margin-left: 5px; 
+  flex-shrink: 0;
 }
 
 
-/* CSS for Skills component with blue color theme */
+/* ---------------------------- skills ------------------------------*/
 .myskills {
+  position:relative;
   padding: 20px;
-  background:linear-gradient(to bottom left,#1cdcf2,blue,#1cdcf2); /* Light blue background */
+  background-image: linear-gradient(to bottom,black,gray);
   text-align: center;
 }
 
 .myskills h1 {
   font-size: 2.5rem;
-  color:white; /* Dark blue for the header */
+  color:white; 
   margin-bottom: 30px;
   text-decoration:underline;
 }
@@ -200,14 +209,14 @@ font-weight:bold;
 }
 
 .myskills .skill {
-  background-color: #ffffff; /* White background for skill cards */
+  background:linear-gradient(to bottom,black,gray);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
   width: 250px;
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 2px solid #0288d1; /* Blue border */
+  border: 2px solid gray;
 }
 
 .myskills .skill:hover {
@@ -216,28 +225,30 @@ font-weight:bold;
 }
 
 .myskills .logo img {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 15px;
+  border-radius:30px;
 }
 
 .myskills .name h2 {
   font-size: 1.2rem;
-  color: #0277bd; /* Medium blue for skill names */
+  color: white; 
   margin: 0;
 }
 
-/* CSS for Project component with blue color theme */
+/* -----------------------------  Project -------------------------- */
 .project {
+  position:relative;
   padding: 20px;
-  background:linear-gradient(to bottom left,#1cdcf2,blue,#1cdcf2);/* Light blue background */
+  background-image: linear-gradient(to bottom,black,gray);
   text-align: center;
  
 }
 
 .project .name h1 {
   font-size: 2.5rem;
-  color:white; /* Dark blue for the header */
+  color:white; 
   margin-bottom: 30px;
   text-decoration:underline;
 }
@@ -249,15 +260,15 @@ font-weight:bold;
 }
 
 .project .projectname > div {
-background-color:#26C6DA;
+background:linear-gradient(to bottom,black,gray);
   
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
   margin: 20px;
   width: 300px;
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 2px; /* Blue border */
+  border: 2px;
 }
 
 .project .projectname > div:hover {
@@ -268,7 +279,7 @@ background-color:#26C6DA;
 
 .project .projname h1 {
   font-size: 1.5rem;
-  color: white; /* Medium blue for project titles */
+  color: black;
   margin-bottom: 10px;
 }
 
@@ -280,7 +291,7 @@ background-color:#26C6DA;
 
 .project .description h2 {
   font-size: 1rem;
-  color: white; /* Dark blue for descriptions */
+  color: white; 
   line-height: 1.5;
 }
 
@@ -291,23 +302,25 @@ background-color:#26C6DA;
 }
 
 .project .live{
-  color:white;
+  color:black;
   font-size:1.0rem;
   
 }
 .project .live a{
-  color:white;
+  color:black;
  
   text-decoration:none;
   font-size:1.5rem;
 
 }
 
-/* CSS for Contact component with blue color theme */
-/* Contact.css */
+
+/*------------------------------ Contact.css ----------------------- */
 
 .contact {
-  background:linear-gradient(to bottom left,#1cdcf2,blue,#1cdcf2) ;
+  position:relative;
+  background-image: linear-gradient(to bottom, black,gray);
+  margin-bottom:100px;
  
 }
 .contact-icon {
@@ -318,7 +331,7 @@ background-color:#26C6DA;
 }
 
 .contact-icon .items {
-  background-color:#007bff ;
+  background-color:white ;
   margin: 3px;
   height: 70px;
   width: 70px;
@@ -326,14 +339,15 @@ background-color:#26C6DA;
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  border: 2px solid blue;
-  color:white;
+  border: 2px solid #330867;
+  color:black;
 }
 
 .contact-icon .items:hover {
-  color:gray;
-  background-color:#1cdcf2;
-  box-shadow: 5px 5px 10px 10px rgba(39, 245, 231, 0.8);
+  color:white;
+  background-color:black;
+  border: 2px solid black;
+  box-shadow: 5px 5px 10px 10px rgba(128, 128, 128, 0.8);
 }
 
 .contact-icon .items .icons {
@@ -356,7 +370,7 @@ overflow:hidden;
 }
 
 .form {
-  background-color: #ffffff; /* White background for the form */
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -376,8 +390,8 @@ form input:focus, form textarea:focus {
 }
 
 button {
-  background-color: #007bff; /* Blue background */
-  color: #ffffff; /* White text */
+  background-color:gray; 
+  color: #ffffff; 
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
@@ -388,25 +402,31 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: black; 
 }
+/* ----------------------------------------- footer -----------------*/
 
 .footer {
-  background-color: #007BFF; /* Blue background */
-  color: white; /* White text color */
-  text-align: center; /* Center align the text */
-  padding: 20px 0; /* Padding for space around the text */
-  font-family: Arial, sans-serif; /* Font style */
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  background-image: linear-gradient(to bottom, black,gray);
+  color: white;
+  text-align: center; 
+  padding: 20px 0; 
+  font-family: Arial, sans-serif; 
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 900;
+  width:100%;
 }
 
 .footer h1 {
-  margin: 0; /* Remove default margin */
-  font-size: 1.5rem; /* Adjust font size */
+  margin: 0;
+  font-size: 1.5rem;
 }
 .heart {
-  color: hotpink; /* Red color for the heart symbol */
-  font-size: 1.5rem; /* Adjust font size if needed */
+  color: hotpink; 
+  font-size: 1.5rem; 
 }
 
 @media (max-width: 600px) {
@@ -414,6 +434,7 @@ button:hover {
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
+    position:relative;
   }
 
   .home {
@@ -462,6 +483,7 @@ button:hover {
 @media (max-width: 768px) {
   .navbar {
     padding: 15px;
+    position:relative;
   }
 
   .home {
@@ -499,5 +521,108 @@ button:hover {
 
   .footer {
     padding: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    height: auto;
+  }
+
+  .navbar .head {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .nvlink {
+    padding-right: 0;
+  }
+
+  .home {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .home .img img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .home .intro h1 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+
+  .home .intro h2 {
+    font-size: 1.2rem;
+  }
+
+  .about, .myskills, .project, .contact {
+    padding: 20px 10px;
+  }
+
+  .about h1, .myskills h1, .project .name h1, .title h1 {
+    font-size: 1.8rem;
+  }
+
+  .about .me p, .myskills .name h2, .project .projname h1, .description h2 {
+    font-size: 1rem;
+  }
+
+  .myskills .skills, .project .projectname {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .myskills .skill, .project .projectname > div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  form input, form textarea {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .footer h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .home .intro h1 {
+    font-size: 1.2rem;
+  }
+
+  .home .intro h2 {
+    font-size: 1rem;
+  }
+
+  .myskills .skill, .project .projectname > div {
+    width: 100%;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .footer h1 {
+    font-size: 1rem;
   }
 }
