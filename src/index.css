@@ -1,8 +1,12 @@
 *{
   margin:0;
   padding:0;
+  box-sizing: border-box;
 }
 body{
+  margin:0;
+  padding:0;
+
   background:linear-gradient(to bottom,blue,skyblue,white);
 }
 /*--------------------------- navbar --------------*/
@@ -11,7 +15,7 @@ body{
   justify-content:space-between;
   background:linear-gradient(to bottom left,#1cdcf2,blue,#1cdcf2);
   color:white;
-  height:50px;
+  height:80px;
   padding:20px;
   width:100%;
 
@@ -67,7 +71,7 @@ font-weight:bold;
 
 .home .intro .resume{
   margin-top:20px;
-  height:25px;
+  height:40px;
   width:150px;
   border:3px solid 	#1cdcf2;
   text-align:center;
@@ -200,7 +204,7 @@ font-weight:bold;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
-  width: 150px;
+  width: 250px;
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 2px solid #0288d1; /* Blue border */
@@ -250,7 +254,7 @@ background-color:#26C6DA;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
-  width: 250px;
+  width: 300px;
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 2px; /* Blue border */
@@ -288,12 +292,12 @@ background-color:#26C6DA;
 
 .project .live{
   color:white;
-  font-size:1.5rem;
-  font-weight:bold;
+  font-size:1.0rem;
+  
 }
 .project .live a{
   color:white;
-  font-weight:bold;
+ 
   text-decoration:none;
   font-size:1.5rem;
 
@@ -403,4 +407,97 @@ button:hover {
 .heart {
   color: hotpink; /* Red color for the heart symbol */
   font-size: 1.5rem; /* Adjust font size if needed */
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .home {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .home .img img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .home .intro h1 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+  }
+
+  .about, .myskills, .project, .contact {
+    padding: 20px 10px;
+
+    font-size:10px;
+ 
+  }
+
+  .myskills .skills, .project .projectname {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .myskills .skill, .project .projectname > div {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  form input, form textarea {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px;
+  }
+
+  .home {
+    flex-direction: column;
+  }
+
+  .home .img img {
+    width: 90%;
+    max-width: 350px;
+ 
+  }
+
+  .about, .myskills, .project, .contact {
+    padding: 30px 20px;
+   
+
+  }
+
+
+  .myskills .skills, .project .projectname {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+  }
+
+  .myskills .skill, .project .projectname > div {
+    width: 48%;
+   
+  }
+
+  .form {
+    padding: 15px;
+  }
+
+  .footer {
+    padding: 15px;
+  }
 }

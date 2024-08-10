@@ -6,7 +6,7 @@ function Project() {
   const [hoveredProject, setHoveredProject] = useState(null);
 
   const project = [
-    { name: 'E-learning Website', img: 'assets/projects/learn.jpg', description: "This is a project made with complete HTML,CSS JAVASCRIPT,PHP and MYSQL.", live: "https://github.com/sneha090j/E-Learning-website", code: "https://github.com/sneha090j/E-Learning-website" },
+    { name: 'E-learning Website', img: 'assets/projects/learn.jpg', description: "This is a project made with complete HTML,CSS JAVASCRIPT , PHP and MYSQL.", live: "https://github.com/sneha090j/E-Learning-website", code: "https://github.com/sneha090j/E-Learning-website" },
     { name: 'Age Calculator', img: 'assets/projects/calc.jpg', description: "Implement Voice system which tells your age by calculating on the basis of your Date of Birth.", live: "https://github.com/sneha090j/Age-Calculator", code: "https://github.com/sneha090j/Age-Calculator" },
     { name: 'Weather App', img: 'assets/projects/weather.jpg', description: "Using weather api we are able know temperature of each city.", live: "https://weather-2ukx.onrender.com/", code: "https://github.com/sneha090j/weather" },
     { name: 'Quotes App', img: 'assets/projects/quote.jpg', description: "Using Html,CSS,JS and quotes api, created a website which tells the code and even we can post on twitter just clicking on twitter logo.", live: "https://quotes-blue.vercel.app/", code: "https://github.com/sneha090j/Quotes" },
