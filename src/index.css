@@ -1,128 +1,311 @@
-:root {
-  --box-shadow: 5px 5px 10px 10px rgba(39, 245, 231, 0.8);
+*{
+  margin:0;
+  padding:0;
 }
-
-body {
-  background-color: #31708E;
-  color: white;
+body{
+  background:linear-gradient(to bottom,blue,skyblue,white);
 }
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-/* --------------------------------------------- Navbar Section -------------------------------------------------------*/
-
-.nav_bar {
-  
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/*--------------------------- navbar --------------*/
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  background:linear-gradient(to bottom left,#1cdcf2,blue,#1cdcf2);
+  color:white;
+  height:50px;
+  padding:20px;
+  width:100%;
 
 }
 
-.nav_bar .nav_items {
-  padding: 16px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  
+.navbar .head{
+  width:160px;
+  border-radius:10px;
+  border:2px solid #1cdcf2;
+  padding-left:20px
+}
+.nvlink{
+  padding-right:80px;
+}
+.navbar .links{
+margin-left:20px;
+text-decoration:none;
+color:white;
+font-size:20px;
+font-weight:bold;
+
+}
+.navbar .links:hover{
+  color:#1cdcf2;
+ border-bottom:2px solid #1cdcf2;
+ text-shadow: 2px 2px 5px rgba(999, 888, 999, 0.8);
 }
 
-.nav_bar .nav_items:hover {
-  border: 2px solid #2B7A78;
-  background-color:#8FC1E3;
-  border-radius:70%
+/* ------------------------------- Home --------------------------*/
+
+.home{
+  width:100%;
+  display:flex;
+  justify-content:space-around;
+  background:linear-gradient(to bottom left,#1cdcf2,blue,#1cdcf2);
+  color:white;
 }
 
-
-/* ------------------------------------------------- Home Section ------------------------------------------------------ */
-
-.home {
-  height: 80vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.home .img img{
+ width:380px;
+ height:390px;
+ border:2px solid blue;
+ border-radius:50%;
 }
-
-.home .left {
-  background-color: #5085A5;
-  width: 620px;
-  text-align: center;
-  padding: 30px;
-  border-radius: 10px;
-  border: 1px solid lightgreen;
-  box-shadow: var(--box-shadow);
-}
-
-.home .right .img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-}
-
-.home .right .img img {
-  height: 270px;
-  width: 270px;
-  border: 2px solid lightgreen;
-  border-radius: 100%;
+.home .intro h1{
+  margin-top:100px;
+  font-style:italic;
   
 }
-.home .left .resume {
-  height:35px;
-  background-color:#687864;
-  width:35%;
-  margin-left:200px;
-  border-radius:20px;
-  
-  
-  border:2px solid skyblue;
+.home .intro h2{
+  margin-top:30px;
 }
 
-
-
-
-/* --------------------------------------------------------------------- Skills ------------------------------------------------- */
-.skills {
+.home .intro .resume{
   margin-top:20px;
+  height:25px;
+  width:150px;
+  border:3px solid 	#1cdcf2;
   text-align:center;
-  width: 950px;
+  border:2px solid blue;
+  background-color:	#1cdcf2;
+  color:blue;
+  border-radius:10px;
+  padding:5px;
 }
 
-.skills .items {
+.home .intro .resume a{
+  color:navy-blue;
+  text-decoration:none;
+  font-weight:bold;
+
+}
+.home .intro .resume a:hover {
+  color:white;
+  text-decoration: underline;
+  
+}
+
+/* -------------------------------- About ---------------------------*/
+
+/* CSS for About component with blue color theme */
+.about {
+  padding: 40px;
+  background:linear-gradient(to bottom left,#1cdcf2,blue,#1cdcf2); /* Light blue background */
+  color:white; /* Dark blue text color */
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: white; /* Dark blue for the header */
+  text-decoration:underline;
+}
+
+.about .main {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
- 
-  margin: auto;
- 
 }
 
-.skills .items .item {
-  width: calc(33.33%);
-  background-color: black;
-  margin: 20px;
-  text-align: center;
+.about .me {
+  flex: 1;
+  max-width: 600px;
+  padding: 20px;
+  text-align: left;
+}
+
+.about .me p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #01579b; /* Dark blue for the paragraph */
+  background-color: #ffffff; /* White background for the text box */
   padding: 20px;
   border-radius: 10px;
-  border: 1px solid yellow;
-  box-shadow: var(--box-shadow);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.skills .items .item img {
-  width: 70px;
+.about .myself {
+  flex: 1;
+  max-width: 600px;
+  padding: 20px;
+  text-align: left;
 }
 
-/* ----------------------------------------- Contact --------------------------------------------------------------------------- */
-.contact{
-  margin-top:100px;
-}
-.contact h1{
-  text-align:center;
+.about .name {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  border:1px solid #1cdcf2;
+  background-color:white;
 }
 
+.about .img img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius:50%;
+}
+
+.about .name a {
+  font-size: 1.5rem;
+  color:#01579b; /* Medium blue for the links */
+  text-decoration: none;
+  flex: 1; /* Allows the link to take up available space */
+  font-weight:bold;
+}
+.about .name a:hover {
+  text-decoration: underline;
+  color:#1cdcf2;
+}
+
+.about .count {
+  font-size: 1.2rem;
+  color: #01579b; /* Dark blue for the counts */
+  font-weight: bold;
+  margin-left: 5px; /* Adds spacing between the link and the count */
+  flex-shrink: 0; /* Prevents the count from shrinking */
+}
+
+
+/* CSS for Skills component with blue color theme */
+.myskills {
+  padding: 20px;
+  background:linear-gradient(to bottom left,#1cdcf2,blue,#1cdcf2); /* Light blue background */
+  text-align: center;
+}
+
+.myskills h1 {
+  font-size: 2.5rem;
+  color:white; /* Dark blue for the header */
+  margin-bottom: 30px;
+  text-decoration:underline;
+}
+
+.myskills .skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.myskills .skill {
+  background-color: #ffffff; /* White background for skill cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: 150px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #0288d1; /* Blue border */
+}
+
+.myskills .skill:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.myskills .logo img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.myskills .name h2 {
+  font-size: 1.2rem;
+  color: #0277bd; /* Medium blue for skill names */
+  margin: 0;
+}
+
+/* CSS for Project component with blue color theme */
+.project {
+  padding: 20px;
+  background:linear-gradient(to bottom left,#1cdcf2,blue,#1cdcf2);/* Light blue background */
+  text-align: center;
+ 
+}
+
+.project .name h1 {
+  font-size: 2.5rem;
+  color:white; /* Dark blue for the header */
+  margin-bottom: 30px;
+  text-decoration:underline;
+}
+
+.project .projectname {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project .projectname > div {
+background-color:#26C6DA;
+  
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: 250px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px; /* Blue border */
+}
+
+.project .projectname > div:hover {
+  transform: translateY(-10px);
+  
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project .projname h1 {
+  font-size: 1.5rem;
+  color: white; /* Medium blue for project titles */
+  margin-bottom: 10px;
+}
+
+.project .projectimg img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project .description h2 {
+  font-size: 1rem;
+  color: white; /* Dark blue for descriptions */
+  line-height: 1.5;
+}
+
+
+.project .projectname > div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(10, 20, 30, 0.2);
+}
+
+.project .live{
+  color:white;
+  font-size:1.5rem;
+  font-weight:bold;
+}
+.project .live a{
+  color:white;
+  font-weight:bold;
+  text-decoration:none;
+  font-size:1.5rem;
+
+}
+
+/* CSS for Contact component with blue color theme */
+/* Contact.css */
+
+.contact {
+  background:linear-gradient(to bottom left,#1cdcf2,blue,#1cdcf2) ;
+ 
+}
 .contact-icon {
   height: 30vh;
   display: flex;
@@ -131,7 +314,7 @@ a {
 }
 
 .contact-icon .items {
-  background-color: black;
+  background-color:#007bff ;
   margin: 3px;
   height: 70px;
   width: 70px;
@@ -139,14 +322,85 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  border: 2px solid lightgreen;
+  border: 2px solid blue;
+  color:white;
 }
 
 .contact-icon .items:hover {
-  background-color:grey;
-  box-shadow: var(--box-shadow);
+  color:gray;
+  background-color:#1cdcf2;
+  box-shadow: 5px 5px 10px 10px rgba(39, 245, 231, 0.8);
 }
 
 .contact-icon .items .icons {
   font-size: 2rem;
+}
+
+.contacts{
+  max-width:600px;
+  padding: 20px;
+  border-radius: 8px;
+overflow:hidden;
+  margin: 0 auto;
+
+}
+.title h1 {
+  color: white; /* Dark blue */
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration:underline;
+}
+
+.form {
+  background-color: #ffffff; /* White background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+}
+
+button {
+  background-color: #007bff; /* Blue background */
+  color: #ffffff; /* White text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+ 
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.footer {
+  background-color: #007BFF; /* Blue background */
+  color: white; /* White text color */
+  text-align: center; /* Center align the text */
+  padding: 20px 0; /* Padding for space around the text */
+  font-family: Arial, sans-serif; /* Font style */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.footer h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 1.5rem; /* Adjust font size */
+}
+.heart {
+  color: hotpink; /* Red color for the heart symbol */
+  font-size: 1.5rem; /* Adjust font size if needed */
 }

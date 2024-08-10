@@ -1,32 +1,26 @@
-import React, { useEffect } from "react";
-import Navbar from "./component/Navbar";
-import Home from "./component/Home";
-
-import Skills from "./component/Skill";
-import Projects from "./component/Project";
-import Contact from './component/Contact'
-import Aos from "aos";
-import "aos/dist/aos.css"
+import About from './components/About'
+import Skills from './components/Skills'
+import Project from './components/Project'
+import Contact from './components/Contact'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 
-const App = () => {
- useEffect(() => {
-  Aos.init();
-  
- }, [])
- 
+function App() {
+
+
   return (
     <>
-      <Navbar />
-      <div className="container">
-        <Home />
-        
-        <Skills />
-        <Projects />
-        <Contact />
-      </div>
+     <Header/>
+     <About/>
+      <Skills/>
+      <Project/>
+      <Contact/>
+      <Footer/>
+      
     </>
-  );
-};
 
-export default App;
+  )
+}
+
+export default App
