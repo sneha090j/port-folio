@@ -32,8 +32,8 @@ function Home() {
 
 
   return (
-    <div>
-      <div className="home">
+    <div id="Home">
+      <div className="home" >
         <div className="img" data-aos="zoom-in-up">
           <img src={`/assets/${photo.imgSrc}`}></img>
 

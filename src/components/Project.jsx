@@ -25,7 +25,7 @@ function Project() {
   };
 
   return (
-    <div className='project'>
+    <div className='project' id="Project">
       <div className="name">
         <h1>My Projects</h1>
       </div>
@@ -34,7 +34,7 @@ function Project() {
           <div
             key={project.name}
             className="projectname"
-            id='Project'
+           
             onMouseEnter={() => handleMouseEnter(project.name)}
             onMouseLeave={handleMouseLeave}
           >

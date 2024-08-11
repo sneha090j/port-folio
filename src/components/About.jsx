@@ -5,9 +5,9 @@ function About() {
 
   
   return (
-    <>
+    <div  id='About'>
 
-      <div className="about" id='About'>
+      <div className="about">
 
         <h1 data-aos="fade-right">About Me</h1>
         <div className="main">
@@ -52,7 +52,7 @@ function About() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

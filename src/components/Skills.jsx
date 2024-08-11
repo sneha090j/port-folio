@@ -7,16 +7,16 @@ import 'aos/dist/aos.css';
 
 const Skills = () => {
   const skills = [
-    { logo: 'assets/photo/java.png', name: 'Java'},
-    { logo: 'assets/photo/c++.png', name: 'C++'  },
-    { logo: 'assets/photo/html.png', name: 'HTML' },
-    { logo: 'assets/photo/css.png', name: 'CSS' },
-    { logo: 'assets/photo/bootstrap.png', name: 'Bootstrap'},
-    { logo: 'assets/photo/js.png', name: 'JavaScript'},
-    { logo: 'assets/photo/react.png', name: 'React',  },
-    { logo: 'assets/photo/tailwind.png', name: 'Tailwind',  },
-    { logo: 'assets/photo/nodejs.png', name: 'NodeJS'},
-    { logo: 'assets/photo/mongodb.png', name: 'MongoDB' },
+    { logo: 'assets/skills/java.png', name: 'Java'},
+    { logo: 'assets/skills/c++.jpeg', name: 'C++'  },
+    { logo: 'assets/skills/HTML.jpeg', name: 'HTML' },
+    { logo: 'assets/skills/css.jpeg', name: 'CSS' },
+    { logo: 'assets/skills/bottstrap.jpg', name: 'Bootstrap'},
+    { logo: 'assets/skills/js.png', name: 'JavaScript'},
+    { logo: 'assets/skills/react.jpeg', name: 'React',  },
+    { logo: 'assets/skills/tailwind.jpeg', name: 'Tailwind',  },
+    { logo: 'assets/skills/node.jpeg', name: 'NodeJS'},
+    { logo: 'assets/skills/mongo.jpeg', name: 'MongoDB' },
 
     // Add more skills here
   ];
