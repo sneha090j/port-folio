@@ -6,14 +6,14 @@ function Project() {
   const [hoveredProject, setHoveredProject] = useState(null);
 
   const project = [
-    { name: 'E-learning Website', img: 'assets/projects/learn.jpg', description: "This is a project made with complete HTML,CSS JAVASCRIPT , PHP and MYSQL.", live: "https://github.com/sneha090j/E-Learning-website", code: "https://github.com/sneha090j/E-Learning-website" },
-    { name: 'Age Calculator', img: 'assets/projects/calc.jpg', description: "Implement Voice system which tells your age by calculating on the basis of your Date of Birth.", live: "https://github.com/sneha090j/Age-Calculator", code: "https://github.com/sneha090j/Age-Calculator" },
-    { name: 'Weather App', img: 'assets/projects/weather.jpg', description: "Using weather api we are able know temperature of each city.", live: "https://weather-2ukx.onrender.com/", code: "https://github.com/sneha090j/weather" },
-    { name: 'Quotes App', img: 'assets/projects/quote.jpg', description: "Using Html,CSS,JS and quotes api, created a website which tells the code and even we can post on twitter just clicking on twitter logo.", live: "https://quotes-blue.vercel.app/", code: "https://github.com/sneha090j/Quotes" },
+    { name: 'E-learning Website', img: 'assets/projects/learn.jpg', description: "This is a project made with HTML, CSS, JavaScript, PHP, and MySQL.", live: "https://github.com/sneha090j/E-Learning-website", code: "https://github.com/sneha090j/E-Learning-website" },
+    { name: 'Age Calculator', img: 'assets/projects/calc.jpg', description: "Voice system that tells your age by calculating your Date of Birth.", live: "https://github.com/sneha090j/Age-Calculator", code: "https://github.com/sneha090j/Age-Calculator" },
+    { name: 'Weather App', img: 'assets/projects/weather.jpg', description: "Using weather API to know the temperature of any city.", live: "https://weather-2ukx.onrender.com/", code: "https://github.com/sneha090j/weather" },
+    { name: 'Quotes App', img: 'assets/projects/quote.jpg', description: "Website to show quotes using API. Users can share to Twitter.", live: "https://quotes-blue.vercel.app/", code: "https://github.com/sneha090j/Quotes" },
   ];
 
   useEffect(() => {
-    AOS.init({ duration: 9000 });
+    AOS.init({ duration: 1000 });
   }, []);
 
   const handleMouseEnter = (name) => {
@@ -26,6 +26,7 @@ function Project() {
 
   return (
     <div className='project' id="Project">
+       <hr className="divider" />
       <div className="name">
         <h1>My Projects</h1>
       </div>
@@ -34,7 +35,6 @@ function Project() {
           <div
             key={project.name}
             className="projectname"
-           
             onMouseEnter={() => handleMouseEnter(project.name)}
             onMouseLeave={handleMouseLeave}
           >

@@ -6,7 +6,7 @@ function About() {
   
   return (
     <div  id='About'>
-
+ <hr className="divider" />
       <div className="about">
 
         <h1 data-aos="fade-right">About Me</h1>
@@ -22,7 +22,7 @@ function About() {
               I am great at team work and always aims to give my 100% . I am quick learner who always aims to learn more and adapts all kinds of situations.
               I don't give up when stuck in a problem and work on it , no matter how much time it takes.
               <br></br>
-              Thank you
+              Thank you!
             </p>
 
           </div>

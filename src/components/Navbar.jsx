@@ -13,10 +13,13 @@ function Navbar() {
   return (
     <>
     <div className="navbar">
+      
         <div className="head" data-aos="fade-right">
+       
 
         <h1>PortFolio</h1>
         </div>
+     
         <div className="nvlink" data-aos="fade-left">
       
        <a className="links" href="#Home">Home</a>
@@ -26,6 +29,7 @@ function Navbar() {
        <a className="links" href="#Contact">Contact</a>
        
         </div>
+       
     </div>
     </>
   )
