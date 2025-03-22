@@ -11,7 +11,7 @@ function Header() {
     <>
       <BrowserRouter>
         <Navbar />
-        <hr className="divider" />
+      
       
         <Routes>
           <Route path="/" element={<Home />} />

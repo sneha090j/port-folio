@@ -4,9 +4,9 @@ import Skills from './components/Skills';
 import Project from './components/Project';
 import Contact from './components/Contact';
 import Header from './components/Header';
-import Footer from './components/Footer';
 
 function App() {
+  
   return (
     <div className="App">
       <Header />
@@ -14,7 +14,7 @@ function App() {
       <Skills />
       <Project />
       <Contact />
-      <Footer />
+   
     </div>
   );
 }
